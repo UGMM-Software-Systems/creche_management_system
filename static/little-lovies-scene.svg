@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 240" role="img" aria-labelledby="title desc">
+  <title id="title">LittleLovies childcare room</title>
+  <desc id="desc">A sunny playroom with a window, toy blocks, a teddy bear and a plant.</desc>
+  <rect width="760" height="240" fill="#eaf0e4"/>
+  <circle cx="615" cy="48" r="26" fill="#f3d996"/>
+  <rect x="416" y="24" width="157" height="118" rx="8" fill="#f9faf3"/>
+  <rect x="429" y="36" width="131" height="92" rx="3" fill="#cfe2d7"/>
+  <path d="M494 36v92M429 82h131" stroke="#f9faf3" stroke-width="7"/>
+  <path d="M0 173c112-24 194 12 312-3s251-4 448-10v80H0z" fill="#d9e7d8"/>
+  <rect x="263" y="150" width="107" height="59" rx="5" fill="#e2a56d"/>
+  <rect x="276" y="132" width="37" height="34" rx="4" fill="#e9c866"/>
+  <rect x="317" y="128" width="37" height="38" rx="4" fill="#90b89c"/>
+  <path d="M258 209h118" stroke="#ae7850" stroke-width="5" stroke-linecap="round"/>
+  <ellipse cx="474" cy="207" rx="87" ry="15" fill="#b9ceb9"/>
+  <path d="M452 195c-6-20-4-36 6-50m13 50c-1-23 8-39 21-52m-7 54c8-18 20-28 37-34" fill="none" stroke="#659072" stroke-width="7" stroke-linecap="round"/>
+  <path d="M448 195h86l-8 22h-70z" fill="#ca8b69"/>
+  <ellipse cx="145" cy="192" rx="53" ry="16" fill="#e8c99a"/>
+  <circle cx="128" cy="162" r="23" fill="#c38b65"/>
+  <circle cx="110" cy="146" r="10" fill="#c38b65"/>
+  <circle cx="146" cy="146" r="10" fill="#c38b65"/>
+  <ellipse cx="145" cy="190" rx="25" ry="22" fill="#d4a47f"/>
+  <circle cx="121" cy="162" r="2.7" fill="#4a3b33"/>
+  <circle cx="135" cy="162" r="2.7" fill="#4a3b33"/>
+  <ellipse cx="128" cy="169" rx="4" ry="3" fill="#80584c"/>
+  <path d="M67 220h625" stroke="#b3c9b3" stroke-width="3" stroke-linecap="round"/>
+</svg>

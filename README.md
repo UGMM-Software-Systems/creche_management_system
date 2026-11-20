@@ -1,6 +1,8 @@
-# SamXpress Fleet Management Demo
+# LittleLovies Creche Management Demo
 
-A small Flask app for a Manchester student delivery operation. The dashboard covers incoming requests, driver and vehicle allocation, delivery status, and a lightweight run summary. Records are stored in `data.json`, so no database service is used for this demo implementation.
+A small Flask application for a student-run toddler creche. It demonstrates child and guardian registration, consent and care-note capture, an owner-managed opening calendar, booking confirmations, cancellations, daily capacity monitoring, and basic operational totals. JSON file storage keeps the demo simple and does not require a separate database service.
+
+All people and contact details in `data.json` are synthetic. Do not enter real children's or families' information: this demo is not designed or approved for production use.
 
 ## Run locally
 
@@ -11,8 +13,15 @@ pip install -r requirements.txt
 python app.py
 ```
 
-Open http://127.0.0.1:5000. Demo sign-in: `dispatch` / `samxpress123`.
+Open http://127.0.0.1:5000. Demo sign-in: `owner` / `littleloves123`.
 
-## Windows executable
+The demo has a deliberately seeded daily-capacity boundary defect for the review and testing exercise. The application stores sensitive registration fields in a local JSON file and uses lightweight demo authentication; production use would require a security, privacy, safeguarding, backup and regulatory review, plus controlled access and durable storage.
 
-Double-click `SamXpress-Fleet.exe` on Windows. It opens the app automatically in your default browser at http://127.0.0.1:5000 and shows no command prompt window.
+## Current scope
+
+- The owner can register a child with guardian contact, emergency contact, consent, allergy and medical-note fields.
+- The owner can add and close opening dates. A date with active bookings cannot be closed until those bookings are cancelled.
+- Confirmed reservations are counted against the five-child daily limit. Cancellations free a place, and the same child cannot have two active bookings on one date.
+- The dashboard deliberately avoids showing care notes in its booking list.
+
+The sample dates are in the JSON file and should be updated there for a fresh demo period. This is a local single-owner teaching prototype, not a multi-user or concurrent booking service.

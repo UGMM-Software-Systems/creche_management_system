@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sign in | LittleLovies Creche</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body class="login-page">
+  <main class="login-shell">
+    <a class="brand brand-login" href="{{ url_for('login') }}"><span class="brand-mark">LL</span><span>LittleLovies<small>CRECHE MANAGEMENT</small></span></a>
+    <div class="login-content">
+      <aside class="login-visual">
+        <p class="eyebrow">UGM MANCHESTER · A LITTLE PLACE TO GROW</p>
+        <h1>Care that fits<br>around campus.</h1>
+        <p class="login-visual-copy">A calm, small-group creche for student families, managed around the owner's timetable.</p>
+        <img src="{{ url_for('static', filename='little-lovies-scene.svg') }}" alt="Illustration of a welcoming childcare room with toys and a small plant">
+        <div class="login-visual-foot"><span>UP TO FIVE TODDLERS</span><span>OWNER-LED CARE</span></div>
+      </aside>
+      <section class="login-panel">
+        <p class="eyebrow">OWNER ACCESS</p>
+        <h2>{{ greeting }}.<br>Welcome back.</h2>
+        <p class="muted">Sign in to manage registrations, dates and bookings.</p>
+        {% with messages = get_flashed_messages(with_categories=true) %}
+          {% for category, message in messages %}<div class="notice notice-{{ category }}" role="status">{{ message }}</div>{% endfor %}
+        {% endwith %}
+        <form method="post" class="login-form">
+          <label>Username<input name="username" autocomplete="username" required placeholder="Your username"></label>
+          <label>Password<input name="password" type="password" autocomplete="current-password" required placeholder="Your password"></label>
+          <button class="button button-primary button-wide" type="submit">Sign in <span aria-hidden="true">→</span></button>
+        </form>
+        <p class="demo-login">Demo access: <strong>owner</strong> / <strong>littleloves123</strong></p>
+      </section>
+    </div>
+    <p class="login-footer">A small, thoughtful space for our student community.</p>
+  </main>
+</body>
+</html>
