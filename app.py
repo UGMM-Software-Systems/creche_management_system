@@ -25,6 +25,14 @@ def save_data(data):
         json.dump(data, data_file, indent=2)
 
 
+def summarize_open_day_count(open_days):
+    return {
+        "total": len(open_days),
+        "open": sum(1 for opening in open_days if opening.get("open")),
+        "closed": sum(1 for opening in open_days if not opening.get("open")),
+    }
+
+
 def login_required(view):
     @wraps(view)
     def wrapped_view(*args, **kwargs):
